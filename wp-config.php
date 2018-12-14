@@ -27,16 +27,16 @@
 
 // ** MySQL 設定 - この情報はホスティング先から入手してください。 ** //
 /** WordPress のためのデータベース名 */
-define('DB_NAME', getenv('MYSQL_DATABASE'));
+define('DB_NAME', getenv('MO_DATABASE_NAME'));
 
 /** MySQL データベースのユーザー名 */
-define('DB_USER', getenv('WORDPRESS_DB_USER'));
+define('DB_USER', getenv('MO_DATABASE_USERNAME'));
 
 /** MySQL データベースのパスワード */
-define('DB_PASSWORD', getenv('WORDPRESS_DB_PASSWORD'));
+define('DB_PASSWORD', getenv('MO_DATABASE_PASSWORD'));
 
 /** MySQL のホスト名 */
-define('DB_HOST', getenv('WORDPRESS_DB_HOST'));
+define('DB_HOST', getenv('MO_DATABASE_HOST'));
 
 /** データベースのテーブルを作成する際のデータベースの文字セット */
 define('DB_CHARSET', 'utf8');
